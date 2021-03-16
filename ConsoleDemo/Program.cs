@@ -7,38 +7,95 @@ namespace ConsoleDemo
     {
         static void Main(string[] args)
         {
-            
-            
-          
-            if (true == true)
-            {
-                Console.WriteLine($"Input was: { 2 }");
 
-            }
-            else
+
+            /*
+              if (true == true)
+              {
+                  Console.WriteLine($"Input was: { 2 }");
+
+              }
+              else
+              {
+                  Console.WriteLine("Error while parssing");
+              }
+
+              Console.WriteLine("=====================================================");
+              var inputString = Int32.Parse(Console.ReadLine());
+              Console.WriteLine($"number is : { inputString}");
+
+
+              Console.WriteLine("=====================================================");
+
+              string caseSwitch = "+";
+
+              switch (caseSwitch)
+              {
+                  case "/":
+                      Console.WriteLine($"number is //// : { inputString}");
+                      break;
+                  case "+":
+                      Console.WriteLine($"number is ++++ : { inputString}");
+                      break;
+                  case "-":
+                      Console.WriteLine($"number is ++++ : { inputString}");
+                      break;
+                  default:
+                      Console.WriteLine("Default case");
+                      break;
+              }
+
+
+              Console.WriteLine("=====================================================");
+              var numbers = new List<int>()
+              {
+                  1,2,3
+              };
+              foreach(int number in numbers)
+              {
+                  Console.WriteLine($"number is : { number}");
+              }
+
+              string operatorInput = "-";
+              if(operatorInput == "2")
+              {
+
+              }
+
+           */
+            var sebClient = new Customer()
             {
-                Console.WriteLine("Error while parssing");
-            }
-            var numbers = new List<int>()
+                Forenames = "Jaunius",
+                LastNames = "Pinelis"
+             };
+            var bank1 = new Bank()
             {
-                1,2,3
+                Name = "SEB bank",
+                Customers = new List<Customer>()
+                {
+                    sebClient
+                }
             };
-            foreach(int number in numbers)
+            var bank2 = new Bank()
             {
-                Console.WriteLine($"number is : { number}");
-            }
-
-            string operatorInput = "-";
-            if(operatorInput == "2")
+                Name = "Danske bank",
+                Customers = new List<Customer>()
+                {
+                    sebClient
+                }
+            };
+            var bank3 = new Bank()
             {
+                Name = "Swedbank",
+                Customers = new List<Customer>()
+                {
+                    sebClient
+                }
+            };
+            Console.WriteLine(bank2.GetInformation());
+           // bank2.SetDeleted(true);
 
-            }
-
-            while (true)
-            {
-                Console.WriteLine($"number is : { 4}");
-            }
-
+           // Console.WriteLine(bank2.Deleted);
         }
 
     }
