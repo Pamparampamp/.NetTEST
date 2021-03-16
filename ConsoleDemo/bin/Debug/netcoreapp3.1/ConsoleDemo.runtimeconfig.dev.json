@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Arnas\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Arnas\\.nuget\\packages"
+    ]
+  }
+}
